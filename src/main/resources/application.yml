@@ -1,0 +1,22 @@
+server.port: 5000
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://vote-app-db.cxtehbcffech.ap-southeast-1.rds.amazonaws.com:5432/vote_app
+    username: root
+    password: kj1234567890
+    driverClassName: org.postgresql.Driver
+vote:
+  app:
+    jwtSecret: ======================VoteHOA=Spring===========================
+    jwtExpirationMs: 86400000
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: http://localhost:8080/realms/ILV
+          
